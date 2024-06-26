@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <a href="https://www.instagram.com/lk_.sara/" class="instagram-button" id="instagramButton">Instagram</a>
+  <input type="text" class="textbox" id="codeInput" placeholder="Web. Admin" maxlength="4">
+  <button class="submit-button" id="submitButton" onclick="checkCode()">Submit</button>
+  <div class="counter" id="clickCounter">0</div>
+  <button class="reset-button" id="resetButton" onclick="showConfirmCancelButtons()">Reset</button>
+  <button class="confirm-button" id="confirmButton" onclick="confirmReset()">Confirm Reset</button>
+  <button class="cancel-button" id="cancelButton" onclick="cancelReset()">Cancel</button>
+  <div class="error-message" id="errorMessage"></div>
+</div>
+<div class="notification" id="notification">Counter reset successfully!</div>
+<script src="script.js"></script>
+</body>
+</html>
